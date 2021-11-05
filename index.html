@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Serokell</title>
+</head>
+<body>
+   
+    <nav class="nav">
+
+            <div class="nav__logo">
+                <img src = "./images/serokell-test-logo.svg" alt="serokell test site logo" />
+            </div>
+
+            <ul class="nav__links">
+                <li class="nav__item nav__item--one">
+                    <a class="nav__link nav__link--one" href="#"> Projects</a>
+                </li>
+
+                <li class=" nav__item nav__item--two">
+                    <a class="nav__link nav__link--two" href="#">Labs</a>
+                </li>
+
+                <li class="nav__item nav__item--three">
+                    <a class="nav__link nav__link--three" href="#">Blog</a>
+                </li>
+
+                <li class="nav__item nav__item--four">
+                    <a class="nav__link nav__link--four" href="#">Academy</a>
+                </li>
+
+                <li class="nav__item">
+                   <a href="#contact"> <button>Contact Us</button> </a>
+                </li>
+            </ul>
+
+            <div class="nav__button" id="nav-open">
+                 <div class="line line-1" ></div>
+                 <div class="line line-2" ></div>
+                 <div class="line line-3" ></div>
+            </div>
+
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+             <header>
+                    <div class="nav__logo">
+                        <img src = "./images/serokell-test-logo.svg" alt="serokell test site logo" />
+                    </div>
+
+                    <div class="mobile-nav__button" id="nav-close">
+                        <div class="line line-1" ></div>
+                        <div class="line line-2" ></div>
+                    </div>
+             </header>
+
+             <ul class="mobile-nav__links">
+                <li class="mobile-nav__item">
+                    <a class="" href="#"> Projects</a>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <a class="" href="#">Labs</a>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <a class="" href="#">Blog</a>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <a class="" href="#">Academy</a>
+                </li>
+                <li class="mobile-nav__item" id="contact-us">
+                    <a href="#contact"> <button>Contact Us</button> </a>
+                 </li>
+             </ul>
+
+        </nav>
+        
+        <main class="content">
+            <div class="content-top">
+                   <h2 class="content-top__header">Your <b>expectations,</b> lifted</h2>
+                   <div class="content-top__block"></div>
+                   <a href="#contact" class="content-top__button">Contact Us</a>
+       
+            </div>
+            
+            <div class="content-services">
+                <h2 class="content-services__header">Services</h2>
+
+                <div class="content-services__block content-services__block">
+
+                    <img src="./images/image-1.svg" alt="image item one">
+
+                    <div class="content-services__block-text service__text--one">
+                        <h3 class="content-services__block-header">Web Design and development</h3>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo laudantium libero in ipsam quisquam iure quos, non explicabo minima.</p>
+
+                    </div>
+
+                   
+                </div>
+
+                <div class="content-services__block content-services__block--two">
+                    <div class="content-services__block-text content-services__block-text service__text--two">
+                        <h3 class="content-services__block-header">Mobile applicaition development</h3>
+                        <p>Amet consectetur adipisicing elit. Sit quo laudantium libero in ipsam quisquam iure quos, non explicabo minima.</p>
+                        
+                    </div>
+
+                    <img src="./images/image-2.png" alt="image item one">
+                </div>
+            </div>
+
+            <div class="content-contact">
+                <h2 class="content-contact__header">Contact Us</h2>
+                <form class="content-contact__form"  id="contact">
+                    <input type="text" class="content-contact__form-item content-contact__form--name" id="name" placeholder="Name" />
+                    <input type="text" class="content-contact__form-item content-contact__form--email"  id="email"  placeholder="Email Address" />
+                    <textarea  class="content-contact__form-item content-contact__form--desc" id="message" placeholder="How can we be of help?"></textarea>
+                    <button type="submit" id="submit" class="content-contact__form-item content-contact__form--submit">Submit</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+             <div class="footer-main">
+                 <ul class="footer-main__item">
+                     <li>
+                         <img src="./images/icons/phone.png" alt="">
+                         <span>(+372) 699-1531</span>
+                     </li>
+                     <li>
+                         <img src="./images/icons/mail.png" alt="">
+                         <span>hi@serokell.io</span>
+                    </li>
+                     <li>
+                        <img src="./images/icons/address.png" alt="">
+                        <span>Pille tn 7/5-13, Kesklinna linnaosa, Tallinn, Harju maakond, 10135, Estonia</span>
+                     </li>
+                 </ul> 
+                 <ul class="footer-main__item">
+                    <li>Fintech</li>
+                    <li>Managed IT services</li>
+                    <li>ML consulting</li>
+                    <li>How we work</li>
+                </ul>  
+                <ul class="footer-main__item">
+                    <li>Blockchain</li>
+                    <li>Contact Us</li>
+                    <li>Privacy notice</li>
+                </ul>      
+               
+             </div>
+             <hr>
+             <p>Copyright</p>
+             
+        </footer>
+<script src="./build/index.js"></script>
+</body>
+</html>
