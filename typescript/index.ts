@@ -1,12 +1,12 @@
 
-const getById = (id: string)=> document.getElementById(id);
+const getById = (id: string)=> <HTMLElement>document.getElementById(id);
 //<HTMLElement>
-const getByClass = (name: string) => document.getElementsByClassName(name)[0];
+const getByClass = (name: string) => <HTMLElement>document.getElementsByClassName(name)[0];
 
 const logFormData = ():void =>{
-   const name = <HTMLElement>getById('name')
-   const email = <HTMLElement>getById('email')
-   const message = <HTMLElement>getById('message')
+   const name = (getById('name') as HTMLInputElement).value;
+   const email = (getById('email') as HTMLInputElement).value;
+   const message = (getById('message') as HTMLInputElement).value;
 
    console.log(`
         user name: ${name}

@@ -4,9 +4,9 @@ var getById = function (id) { return document.getElementById(id); };
 //<HTMLElement>
 var getByClass = function (name) { return document.getElementsByClassName(name)[0]; };
 var logFormData = function () {
-    var name = getById('name');
-    var email = getById('email');
-    var message = getById('message');
+    var name = getById('name').value;
+    var email = getById('email').value;
+    var message = getById('message').value;
     console.log("\n        user name: " + name + "\n        user email: " + email + "\n        user message: " + message + "\n   ");
 };
 (_a = getById("submit")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', logFormData);
